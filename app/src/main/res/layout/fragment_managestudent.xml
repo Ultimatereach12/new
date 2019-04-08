@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".managestudent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="search"
+                    android:background="@drawable/edit"
+                    android:paddingStart="20dp"
+                      android:id="@+id/search"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textStyle="normal"
+                    android:drawableRight="@drawable/ic_search_black_24dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:text="Select All"
+                    android:id="@+id/checkbox"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Add"
+                        android:visibility="gone"
+                        android:id="@+id/add"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:layout_height="30dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="Remove"
+                        android:id="@+id/remove"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycleview"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
+

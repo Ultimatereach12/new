@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manageaccount">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/b"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:text="Manage Student"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="100dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/b"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:text="         Manage Study Material"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/c"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="   Manage Notification"
+                        android:textStyle="bold"
+                        android:id="@+id/c"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="40dp"
+                        android:textColor="@color/blue"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="100dp">
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d"
+                        tools:ignore="MissingConstraints"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="   Manage Online Test"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:id="@+id/d"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

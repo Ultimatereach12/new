@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_first"
+    app:startDestination="@id/dashboard">
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.student.admin.desire.dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/a"
+            app:destination="@id/studentmeterial" />
+        <action
+            android:id="@+id/c"
+            app:destination="@id/noticeboard" />
+        <action
+            android:id="@+id/d"
+            app:destination="@id/result" />
+        <action
+            android:id="@+id/e"
+            app:destination="@id/manageaccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentmeterial"
+        android:name="com.student.admin.desire.studentmeterial"
+        android:label="fragment_studentmeterial"
+        tools:layout="@layout/fragment_studentmeterial" />
+    <fragment
+        android:id="@+id/noticeboard"
+        android:name="com.student.admin.desire.noticeboard"
+        android:label="fragment_noticeboard"
+        tools:layout="@layout/fragment_noticeboard" />
+    <fragment
+        android:id="@+id/result"
+        android:name="com.student.admin.desire.result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/manageaccount"
+        android:name="com.student.admin.desire.manageaccount"
+        android:label="fragment_manageaccount"
+        tools:layout="@layout/fragment_manageaccount" >
+
+
+        <action
+            android:id="@+id/mn"
+            app:destination="@id/managenotification"
+            />
+
+
+
+        <action
+            android:id="@+id/ms"
+            app:destination="@id/managestudent"
+            />
+        <action
+            android:id="@+id/msm"
+            app:destination="@id/managestudymetrial"
+            />
+        <action
+            android:id="@+id/mot"
+            app:destination="@id/manageonlinetest"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/managestudent"
+        android:name="com.student.admin.desire.managestudent"
+        android:label="fragment_managestudent"
+        tools:layout="@layout/fragment_managestudent" />
+    <fragment
+        android:id="@+id/managestudymetrial"
+        android:name="com.student.admin.desire.Managestudymetrial"
+        android:label="fragment_managestudymetrial"
+        tools:layout="@layout/fragment_managestudymetrial" />
+    <fragment
+        android:id="@+id/managenotification"
+        android:name="com.student.admin.desire.managenotification"
+        android:label="fragment_managenotification"
+        tools:layout="@layout/fragment_managenotification" />
+     <fragment
+        android:id="@+id/manageonlinetest"
+        android:name="com.student.admin.desire.manageonlinetest"
+        android:label="fragment_manageonlinetest"
+        tools:layout="@layout/fragment_manageonlinetest" />
+
+</navigation>

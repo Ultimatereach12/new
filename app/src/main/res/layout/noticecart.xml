@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+       android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        android:background="@drawable/notice"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/newew"
+            android:textColor="@android:color/white"
+            android:layout_weight="1.3"
+            app:textAllCaps="true"
+            android:textSize="17sp"
+            android:layout_height="match_parent"
+        />
+       <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+        />
+
+    </LinearLayout>
+    <com.github.aakira.expandablelayout.ExpandableWeightLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        app:ael_duration="500"
+        app:ael_interpolator="anticipateOvershoot">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+               android:gravity="center"
+
+             android:padding="5dp"
+            android:textStyle="bold"
+            android:id="@+id/noteContent" />
+
+    </com.github.aakira.expandablelayout.ExpandableWeightLayout>
+
+</LinearLayout>
